@@ -48,12 +48,23 @@
     background: white;
   }
 
+  @media (max-width:710px){
+    #welcome-section{
+      flex-direction: column;
+    }
+  }
+
   .lead {
     width: 65%;
   }
 
   .lead-magnet{
     width: 30%;
+    text-align: center;
+  }
+
+  .lead-magnet img{
+    width: 50%;
   }
   
   h1{
