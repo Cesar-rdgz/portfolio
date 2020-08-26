@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: #09A7A1;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  #navbar ul {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+  }
+  
+  #navbar ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #fff;
+    transition: all .5s;
+  }
+  
+  #navbar ul li a:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  #welcome-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+  }
+
+  .lead {
+    width: 65%;
+  }
+
+  .lead-magnet{
+    width: 30%;
+  }
+  
+  h1{
+    font-size: 4rem;
+    font-weight: 1000;
+    color: #09A7A1;
+  }
+  
+  #welcome-section > p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #09A7A1;
+  }
+  
+  #projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #09A7A1;
+  }
+  
+  #projects > h2 {
+    font-size: 2.5rem;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #fff;
+    color: #fff;
+  }
+  
+  #projects .work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  .work-grid .project-tile {
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+  }
+  
+  .code-symbols {
+    color: #fff;
+    transition: color 0.3s ease-out;
+  }
+  
+  .project-tile:hover .code-symbols {
+    color: #FF790E;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    color: #09A7A1;
+  }
+  
+  #contact > div > h2 {
+    font-size: 3.5rem;
+    color: #09A7A1;
+  }
+  
+  #contact .links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    color: #09A7A1;
+  }
+  
+  #contact .links .icons {
+    padding: 15px;
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #09A7A1;
+    transition: transform 0.3s ease-out;
+  }
+  
+  @media (max-width:520px) {
+    #contact .links .icons {
+      font-size: 1.4rem;
+    }  
+    #contact > div > h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  #contact .links .icons:hover {
+    transform: translateY(8px);
+  }
+  
+  footer{
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 4px solid #09A7A1;
+  }
+  
+  footer > p {
+    margin: 1rem;
+    color: #09A7A1;
+  }
