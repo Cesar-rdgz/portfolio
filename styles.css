@@ -1,44 +1,114 @@
+/* --- Global styling --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  #navbar {
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+/* --- Global styling --- */
+
+
+/* --- Header styling --- */
+  header {
+    background: #09A7A1;
+  }
+
+  #toggle-menu {
+    display: none;
+  }
+
+  header .header-wrapper label {
+    float: right;
+    font-size: 32px;
+    margin: 1rem 7rem;
+  }
+
+  header .header-wrapper {
+    width: 90%;
+    margin: auto;
     display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .logo img {
+    width: 5rem;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 5.25rem;
     left: 0;
     width: 100%;
-    z-index: 10;
-    background: #09A7A1;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s;
+    transform: translate(-100%);
   }
-  
-  #navbar ul {
-    display: flex;
-    margin-right: 2rem;
+
+  #toggle-menu:checked ~ #navbar {
+    transform: translateX(0%);
   }
-  
-  #navbar ul li {
-    list-style: none;
-  }
-  
+
   #navbar ul li a {
-    text-decoration: none;
+    padding: 15px;
     display: block;
     font-size: 1.5rem;
     padding: 2rem;
     color: #fff;
     transition: all .5s;
   }
-  
-  #navbar ul li a:hover {
-    background: #fff;
+
+  #navbar a:hover {
+    background: white;
     color: #000;
   }
+
+  @media (min-width:992px){
+
+    header {
+      display: flex;
+      justify-content: center;
+    }
+
+    #navbar {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: translateX(0%);
+      float: right;
+      display: flex;
+      background: none;
+      padding: 0 70px;
+    }
+
+    #navbar ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    #navbar ul li {
+      list-style: none;
+    }
+
+    #navbar ul li a:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    header .header-wrapper label {
+      display: none;
+    }
+  }
+
+  /* --- Header styling --- */
+
   
+/* --- Welcome styling --- */
   #welcome-section {
     display: flex;
     justify-content: space-evenly;
@@ -128,12 +198,8 @@
   .project-tile:hover .code-symbols {
     color: #FF790E;
   }
-  
-  a {
-    text-decoration: none;
-    color: #000;
-  }
-  
+
+/* --- Welcome styling --- */
   
   #contact {
     display: flex;
