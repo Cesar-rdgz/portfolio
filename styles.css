@@ -15,6 +15,11 @@
 /* --- Header styling --- */
   header {
     background: #09A7A1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
 
   #toggle-menu {
@@ -171,6 +176,12 @@
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+  }
+
+  @media (max-width:385px) {
+    #projects .work-grid {
+      grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    }
   }
   
   .work-grid .project-tile {
