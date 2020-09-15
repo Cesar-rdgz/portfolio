@@ -157,7 +157,7 @@
     font-size: 2rem;
     font-weight: 1000;
     color: white;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', normal;
   }
 
   .slide-content > .container {
@@ -223,7 +223,7 @@
     align-items: center;
     row-gap: 1rem;
     margin-top: 10px;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', normal;
   }
 
   #slider .container .projects{
@@ -333,7 +333,7 @@
     font-size: 2rem;
     color: #fff;
     text-align: center;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', normal;
     font-weight: 1000;
   }
 
