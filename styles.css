@@ -160,6 +160,10 @@
     font-family: 'Ranchers', normal;
   }
 
+  .slide-content h2 {
+    font-size: 1rem;
+  }
+
   .slide-content > .container {
     width: 85%;
     text-align: center;
