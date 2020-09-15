@@ -18,7 +18,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/coding.svg">
-  <title>Think in something really good! good! good!</title>
+  <title>Sitios para pequeñas empresas hasta aplicaciones web interactivas enriquecidas.</title>
 
   <!-- setup meta tags -->
 
@@ -26,6 +26,12 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+  <!-- animate CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   
   <!-- style css and icon tags -->
 </head>
@@ -35,15 +41,17 @@
   <header>
     <div class="header-wrapper">
       <div class="logo">
-        <a href="/"><img src="images/coding.svg" alt=""></a>
+        <a href="/"><img src="images/white-coding-logo.svg" alt=""></a>
       </div>
       <input id="toggle-menu" type="checkbox">
       <label for="toggle-menu"><i class="fas fa-bars"></i></label>
       <nav id="navbar">
         <ul>
-          <li><a href="#welcome-section">About</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#welcome-section">Sobre mi</a></li>
+          <li><a id="showWorks" href="#my-works">Trabajos</a></li>
+        </ul>
+        <ul>
+          <li><a id="contact-bottom" href="#contact">Contacta me</a></li>
         </ul>
       </nav>
     </div>
@@ -54,16 +62,94 @@
   <main>
 
     <section id="welcome-section">
-      <div class="lead">
-        <h1>I'm Cesar</h1>
-        <p>I'm a web developer and if you are in looking for one, here you have it. Let's work together. Also you got to know that I almost do design, wiriting and web development on every project.</p>
+      <div id="arrow-left" class="arrow"></div>
+
+      <div id="slider">
+        <div class="slide slider1">
+          <div class="slide-content">
+            <div class="container">
+              <h1 class="title-animated">¿Con qué tipo de proyecto necesitas ayuda?</h1><br/>
+                <div class="links-container p-animated">
+                  <div class="projects">
+                    <a href="#"><h2>Desarrollo de sitios web</h2></a>
+                    <img class="project-icon" src="images/world-wide-web.svg" alt="">
+                  </div>
+                  <div class="projects">
+                    <a href="#"><h2>Optimización de busquedas</h2></a>
+                    <img class="project-icon" src="images/seo.svg" alt="">
+                  </div>
+                  <div class="projects">
+                    <a href="#"><h2>Publicidad por internet</h2></a>
+                    <img class="project-icon" src="images/ads.svg" alt="">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slider2">
+          <div class="slide-content">
+            <div class="container">
+              <h1 class="title-animated">¿No estas seguro de que es lo que necesitas o como aprovechar la publicidad en internet?</h1>
+              <div class="links-container p-animated">
+                <a href="#">Aprender más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slider3">
+          <div class="slide-content">
+            <div class="container">
+              <h1 class="title-animated">Hola soy César</h1>
+              <p class="p-animated">Soy un desarrollador web. Disfruto construyendo todo, desde sitios para pequeñas empresas hasta aplicaciones web interactivas enriquecidas. Si eres una empresa que busca presencia en la web o un empleador que busca contratar personal, puede ponerse en contacto conmigo aquí.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="lead-magnet">
-        <img src="images/foto-perfil-me.jpg" alt="">
+
+      <div id="arrow-right" class="arrow"></div>
+    </section>
+
+    <section id="my-works" class="slideshow">
+      <p class="title-works">Mis ultimos trabajos</p>
+      <div class="content">
+        <div class="content-carrousel">
+          <figure class="shadow">
+            <a target="_blank" href="https://cesar-rdgz.github.io/Etch-A-Sketch/"><img class="work-image" src="images/etch-a-sketch.jpg" alt=""></a>
+            <figcaption>
+              Proyecto Javscript
+            </figcaption>
+          </figure>
+          <figure class="shadow">
+            <a target="_blank" href="https://pmpradio.net"><img class="work-image" class="work-image" src="images/project-online-radio.jpg" alt=""></a>
+            <figcaption>
+              Radio Online
+            </figcaption>
+          </figure>
+          <figure class="shadow">
+            <a target="_blank" href="http://refaccionaria-delcentro.com.mx/"><img class="work-image" src="images/refaccionaria.jpg" alt=""></a>
+            <figcaption>
+              Negocio Local
+            </figcaption>
+          </figure>
+          <figure class="shadow">
+            <a target="_blank" href="https://cesar-rdgz.github.io/Rock-Paper-Scissors/new_rock_paper_scissors_game/"><img class="work-image" src="images/rock-paper-scissors.jpg" alt=""></a>
+            <figcaption>
+              piedra, papel o tijera
+            </figcaption>
+          </figure>
+          <figure class="shadow">
+            <a target="_blank" href="https://capphenix.com"><img class="work-image" src="images/virtual-school.jpg" alt=""></a>
+            <figcaption>
+              Sitio estudiantil
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
     
-    <section id="projects">
+    <!--<section id="projects">
       <h2>Some of my work and projects</h2>
       
       <div class="work-grid">
@@ -126,13 +212,21 @@
         <a class="icons" target="_blank" href="https://www.freecodecamp.org/cesar-rodriguez"><i class="fab fa-free-code-camp"></i>FreeCodeCamp</a>
         <a class="icons" href="tel:+524371045651"><i class="fas fa-phone-volume"></i>Call me</a>
       </div>
-    </section>
+    </section>-->
   </main>
   <!-- main section end -->
 
   <!-- footer section start -->
-  <footer>
-    <p>The purpose of this portfolio it's only to show you my work.</p>
+  <footer id="footer">
+    <section id="contact">
+      <div class="links">
+        <a class="icons" target="_blank" href="https://www.facebook.com/profile.php?id=100017551629934"><i class="fab fa-facebook-f"></i>Facebook</a>
+        <a id="profile-link" target="_blank" class="icons" href="https://github.com/Cesar-rdgz" target="_blank"><i class="fab fa-github-square"></i>GitHub</a>
+        <a class="icons" href="tel:+524371045651"><i class="fas fa-phone-volume"></i>Llamame</a>
+        <a class="icons" href="tel:+524371045651"><i class="fab fa-whatsapp"></i>whatsapp</a>
+        <a class="icons" target="_blank" href="https://www.freecodecamp.org/cesar-rodriguez"><i class="fab fa-free-code-camp"></i>FreeCodeCamp</a>
+      </div>
+    </section>
     
     <p>
       &copy; Created for
@@ -140,6 +234,8 @@
     </p>
   </footer>
   <!-- footer section start -->
-
+  <!-- Js tags -->
+  <script src="main.js"></script>
+  <!-- Js tags -->
 </body>
 </html>
