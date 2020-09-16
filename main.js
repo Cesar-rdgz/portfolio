@@ -60,7 +60,8 @@ arrowRight.addEventListener('click', function (){
 
 startSlide();
 
-
+//remove menu
 showWorks.addEventListener('click', function (){
+    document.getElementById('toggle-menu').checked = false;
     slideShow.style.display = 'block';
 });
