@@ -5,6 +5,10 @@
     box-sizing: border-box;
   }
 
+main{
+  background-color: var(--main-color);
+}
+
   /* --- fonts --- */
 
   @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
@@ -53,7 +57,7 @@
   }
 
   header .logo img {
-    width: 5rem;
+    width: 4rem;
     margin-top: .5rem;
   }
 
@@ -327,11 +331,49 @@
 
   /* --- projects --- */
 
+  /* --- main content --- */
+
+  #websites{
+    width: 98%;
+    padding: .5rem;
+    color: var(--complementary);
+    margin: auto;
+  }
+
+  .hideContent {
+    display: none;
+  }
+
+  #websites .sub-titles{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: white;
+    font-family: 'Ranchers', normal;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  #websites p {
+    margin: 1rem 0;
+  }
+
+  @media (min-width:768px){
+    #websites{
+      width: 90%;
+    }
+  }
+
+  /* --- main content --- */
+
   /* --- 3D image slideshow --- */
 
   .slideshow {
     display: none;
     width: 100%;
+  }
+
+  .showingThings {
+    display: block;
   }
 
   .slideshow .title-works {

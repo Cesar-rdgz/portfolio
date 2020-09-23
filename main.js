@@ -3,9 +3,13 @@ let sliderCards = document.querySelectorAll('.slide-content'),
     arrowRight = document.querySelector('#arrow-right'),
     current = 0,
     titles = document.querySelectorAll('.title-animated'),
-    paragraph = document.querySelectorAll('.p-animated');
-    slideShow = document.querySelector('.slideshow');
-    showWorks = document.querySelector('#showWorks');
+    paragraph = document.querySelectorAll('.p-animated'),
+    slideShow = document.querySelector('.slideshow'),
+    showWorks = document.querySelector('#showWorks'),
+    
+    websiteContent = document.getElementById('websites'),
+    showDevContent = document.getElementById('webdev');
+
 
 // hidde everything
 function reset() {
@@ -60,8 +64,27 @@ arrowRight.addEventListener('click', function (){
 
 startSlide();
 
-//remove menu
+//remove menu and show works
 showWorks.addEventListener('click', function (){
     document.getElementById('toggle-menu').checked = false;
-    slideShow.style.display = 'block';
+    slideShow.classList.add('showingThings');
+});
+
+// return to top and remove works
+window.addEventListener('scroll', function (){
+    if(window.pageYOffset == 0){
+        slideShow.classList.remove('showingThings');
+    }
+});
+
+//remove menu and show content
+showDevContent.addEventListener('click', function (){
+    websiteContent.classList.add('showingThings');
+});
+
+// return to top and remove content
+window.addEventListener('scroll', function (){
+    if(window.pageYOffset == 0){
+        websiteContent.classList.remove('showingThings');
+    }
 });
