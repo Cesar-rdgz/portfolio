@@ -10,6 +10,12 @@ let sliderCards = document.querySelectorAll('.slide-content'),
     websiteContent = document.getElementById('websites'),
     showDevContent = document.getElementById('webdev');
 
+    seoContent = document.getElementById('seo-content');
+    showSeoContent = document.getElementById('seo');
+
+    adsContent = document.getElementById('ads');
+    showAdsContent = document.getElementById('ads-content');
+
 
 // hidde everything
 function reset() {
@@ -86,5 +92,29 @@ showDevContent.addEventListener('click', function (){
 window.addEventListener('scroll', function (){
     if(window.pageYOffset == 0){
         websiteContent.classList.remove('showingThings');
+    }
+});
+
+//remove menu and show content
+showSeoContent.addEventListener('click', function (){
+    seoContent.classList.add('showingThings');
+});
+
+// return to top and remove content
+window.addEventListener('scroll', function (){
+    if(window.pageYOffset == 0){
+        seoContent.classList.remove('showingThings');
+    }
+});
+
+//remove menu and show content
+showAdsContent.addEventListener('click', function (){
+    adsContent.classList.add('showingThings');
+});
+
+// return to top and remove content
+window.addEventListener('scroll', function (){
+    if(window.pageYOffset == 0){
+        adsContent.classList.remove('showingThings');
     }
 });

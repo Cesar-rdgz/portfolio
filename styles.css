@@ -344,7 +344,7 @@ main{
     display: none;
   }
 
-  #websites .sub-titles{
+  .sub-titles{
     font-size: 1.5rem;
     font-weight: 1000;
     color: white;
@@ -364,6 +364,40 @@ main{
   }
 
   /* --- main content --- */
+
+  /* --- seo content --- */
+
+  #seo-content{
+    width: 98%;
+    padding: .5rem;
+    color: var(--complementary);
+    margin: auto;
+  }
+
+  #seo-content p {
+    margin: 1rem 0;
+  }
+
+  /* --- seo content --- */
+
+  /* --- ads content --- */
+
+  #ads{
+    width: 98%;
+    padding: .5rem;
+    color: var(--complementary);
+    margin: auto;
+  }
+
+  #ads p {
+    margin: 1rem 0;
+  }
+
+  .concepts dt {
+    font-weight: bold;
+  }
+
+  /* --- ads content --- */
 
   /* --- 3D image slideshow --- */
 
