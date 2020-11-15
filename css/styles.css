@@ -5,13 +5,10 @@
     box-sizing: border-box;
   }
 
-main{
-  background-color: var(--main-color);
-}
-
   /* --- fonts --- */
 
   @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
   /* --- fonts --- */
 
@@ -179,6 +176,7 @@ main{
 
   .slide {
     background-color: var(--main-color);
+    overflow: hidden;
   }
 
   .arrow {
@@ -333,33 +331,38 @@ main{
 
   /* --- main content --- */
 
-  #websites{
-    width: 98%;
-    padding: .5rem;
-    color: var(--complementary);
-    margin: auto;
+  #main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    row-gap: 1rem;
+    width: 100%;
+    padding: 1rem;
   }
 
-  .hideContent {
-    display: none;
+  #main-content > div {
+    padding: 1rem 1.3rem;
+  }
+
+  #websites{
+    border: 3px dotted var(--main-color);
   }
 
   .sub-titles{
     font-size: 1.5rem;
     font-weight: 1000;
-    color: white;
-    font-family: 'Ranchers', normal;
+    color: var(--second-color);
+    font-family: 'Asap', sans-serif;
     text-align: center;
     padding: 1rem 0;
   }
 
   #websites p {
-    margin: 1rem 0;
   }
 
   @media (min-width:768px){
     #websites{
-      width: 90%;
     }
   }
 
@@ -368,14 +371,11 @@ main{
   /* --- seo content --- */
 
   #seo-content{
-    width: 98%;
-    padding: .5rem;
-    color: var(--complementary);
-    margin: auto;
+    border: 3px dotted var(--main-color);
   }
 
   #seo-content p {
-    margin: 1rem 0;
+    
   }
 
   /* --- seo content --- */
@@ -383,14 +383,10 @@ main{
   /* --- ads content --- */
 
   #ads{
-    width: 98%;
-    padding: .5rem;
-    color: var(--complementary);
-    margin: auto;
+    border: 3px dotted var(--main-color);
   }
 
   #ads p {
-    margin: 1rem 0;
   }
 
   .concepts dt {
@@ -402,8 +398,10 @@ main{
   /* --- 3D image slideshow --- */
 
   .slideshow {
-    display: none;
     width: 100%;
+    margin: 0 auto;
+    padding-top: 8rem;
+    height: 550px;
   }
 
   .showingThings {
@@ -412,18 +410,11 @@ main{
 
   .slideshow .title-works {
     font-size: 2rem;
-    color: #fff;
+    color: var(--main-color);
     text-align: center;
-    font-family: 'Ranchers', normal;
+    font-family: 'Asap', sans-serif;
     font-weight: 1000;
   }
-
-  .slideshow {
-    margin: 0 auto;
-    padding-top: 50px;
-    height: 700px;
-    background: var(--main-color);
-  }  
 
   .slideshow .content {
     margin: auto;
