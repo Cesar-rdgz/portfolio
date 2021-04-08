@@ -519,6 +519,16 @@ footer > p {
 /* --- contact icons --- */
 
 
+/* bootstrap editing */
+
+#slider .accordion{
+  margin-top: 20px;
+}
+
+
+ /*End bootstrap editing */
+
+
 /* --- media querys --- */
 @media (max-width:520px) {
   #contact .links .icons {
