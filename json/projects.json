@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "img": "etch-a-sketch.jpg",
+        "title": "Mouse track",
+        "subTitle": "Etch-a-sketch",
+        "link": "https://github.com/Cesar-rdgz/Etch-A-Sketch",
+        "description": "This is a pretty neat toy, something between a sketchpad and an Etch-A-Sketch. In this a work with creating and inserting html element with Javascript, setting css styles with js... to the css a used css grid, also something essential was javascript eventlistener"
+    },
+    {
+        "id": 2,
+        "img": "refaccionaria.jpg",
+        "title": "Client website",
+        "subTitle": "Refaccionaria del centro",
+        "link": "http://www.refaccionaria-delcentro.com.mx/",
+        "description": "This is a pretty neat toy, something between a sketchpad and an Etch-A-Sketch. In this a work with creating and inserting html element with Javascript, setting css styles with js... to the css a used css grid, also something essential was javascript eventlistener"
+    },
+    {
+        "id": 3,
+        "img": "chatroom-app.jpg",
+        "title": "Chatroom with non-sql database project",
+        "subTitle": "Chatroom project",
+        "link": "https://github.com/Cesar-rdgz/chat-room-project",
+        "description": "This is a fantastic chatroom app, in it we could switch between channels related to different topics. this is a pure Javascript app, using firebase to store the data."
+    },
+    {
+        "id": 4,
+        "img": "wheater-app.jpg",
+        "title": "API fetch project",
+        "subTitle": "Wheater-app",
+        "link": "https://github.com/Cesar-rdgz/weather-app-js",
+        "description": "This is a wheater app fetching data from an API, we can request data for city name."
+    },
+    {
+        "id": 5,
+        "img": "interpisos-app.jpg",
+        "title": "Website PWA",
+        "subTitle": "construction materials app",
+        "link": "https://cesar-rdgz.github.io/inter_pisos_app/",
+        "description": "This is PWA in process with a lot of fun features that we plan to add... this is pretty much a complete app, from json data to injecting html with Javascript"
+    },
+    {
+        "id": 6,
+        "img": "cms-system.jpg",
+        "title": "cms system with php",
+        "subTitle": "Course selling web",
+        "link": "https://capphenix.com/",
+        "description": "This is basic cms system build with php and mysql as a databes, the things that we can do it's save new students, edit his scores, add new post, login and logout, etc..."
+    },
+    {
+        "id": 7,
+        "img": "client-web.jpg",
+        "title": "Json data",
+        "subTitle": "Forniture app",
+        "link": "https://xn--muebleriasao2000-hub.com/",
+        "description": "This is complete PWA, where local clients can search for forniture available on the store. You can take a look followin the link below"
+    }
+]
