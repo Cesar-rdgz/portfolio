@@ -36,7 +36,7 @@
         "img": "interpisos-app.jpg",
         "title": "Website PWA",
         "subTitle": "construction materials app",
-        "link": "https://cesar-rdgz.github.io/inter_pisos_app/",
+        "link": "https://inter-pisos.com",
         "description": "This is PWA in process with a lot of fun features that we plan to add... this is pretty much a complete app, from json data to injecting html with Javascript"
     },
     {
@@ -54,5 +54,13 @@
         "subTitle": "Forniture app",
         "link": "https://xn--muebleriasao2000-hub.com/",
         "description": "This is complete PWA, where local clients can search for forniture available on the store. You can take a look followin the link below"
+    },
+    {
+        "id": 8,
+        "img": "geo.jpg",
+        "title": "Wordpress theme development",
+        "subTitle": "Portfolio website",
+        "link": "https://geovanecreativo.com/",
+        "description": "A wordpress theme power by the core fundamentals of this cms"
     }
 ]

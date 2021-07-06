@@ -264,37 +264,80 @@ body {
 
 
 
-.skillset .icon{
+#skillset .icon{
     width: 70%;
     margin: 1rem auto;
 }
 
-.skillset img{
+#skillset img{
     width: 100%;
+}
+
+#skillset .cv {
+    padding: .8rem 1rem;
+    border-radius: 14px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    display: block;
+    text-align: center;
+    width: max-content;
+    margin: auto;
 }
 
 
 
 
-.contact{
+#contact{
     background-color: white;
     width: 100%;
     padding: 2rem .5rem;
 }
 
-.contact .title{
+#contact .title{
     color: #000;
     margin: 1rem 0;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
 
-.contact .line-decoration{
+#contact .line-decoration{
     background-color: #000;
     width: 90%;
     height: 1px;
     margin: 15px auto;
     border-radius: 10px;
+}
+
+#contact .num-and-whats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact .num-and-whats a {
+    padding: .8rem 1rem;
+    border-radius: 14px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+#contact .num-and-whats .whats {
+    background: #25d366;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+}
+
+#contact .num-and-whats .tel {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
 }
 
 /* querys */
@@ -327,11 +370,11 @@ body {
         height: 300px;
     }
 
-    .contact .title{
+    #contact .title{
         font-size: 3rem;
     }
     
-    .contact .line-decoration{
+    #contact .line-decoration{
         height: 2px;
     }
 
@@ -343,7 +386,7 @@ body {
         font-size: 2rem;
     }
 
-    .contact .btn{
+    #contact .btn{
        font-size: 2rem; 
     }
 }
@@ -401,17 +444,17 @@ body {
 
     #portfolio .project-container{
         width: 300px;
-        height: 300px;
+        height: 200px;
     }
 
-    .skillset .skills-icons-con{
+    #skillset .skills-icons-con{
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
 
-    .skillset .icon{
+    #skillset .icon{
         width: 150px;
     }
 
@@ -427,7 +470,7 @@ body {
         font-size: 1.5rem;
     }
 
-    .contact .btn{
+    #contact .btn{
        font-size: 1.5rem; 
     }
 
